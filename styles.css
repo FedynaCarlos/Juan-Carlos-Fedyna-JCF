@@ -1,0 +1,385 @@
+/* ===================== */
+/* TIPOGRAFÍA Y ESTILOS BASE */
+/* ===================== */
+* {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ===================== */
+/* PALETA DE COLORES PERSONALIZADA */
+/* ===================== */
+.bg-color-1 {
+    background-color: #cbcbea;
+}
+
+.bg-color-2 {
+    background-color: #dbcbea;
+}
+
+.bg-color-3 {
+    background-color: #eacbea;
+}
+
+.bg-color-4 {
+    background-color: #eacbdb;
+}
+
+.bg-color-5 {
+    background-color: #eacbcb;
+}
+
+.bg-color-6 {
+    background-color: #eadacb;
+}
+
+.bg-color-7 {
+    background-color: #5A4E9D;
+    color: white;
+}
+
+.text-dark-custom {
+    color: #2A2A2A;
+}
+
+/* ===================== */
+/* LAYOUT GENERAL Y CONTENEDORES */
+/* ===================== */
+.container,
+.card-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+main {
+    margin-top: 10px;
+}
+
+main section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ===================== */
+/* TIPOGRAFÍA ESCALADA */
+/* ===================== */
+.text-xs {
+    font-size: 1rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-md {
+    font-size: 1rem;
+}
+
+.text-lg {
+    font-size: 1.25rem;
+}
+
+.text-xl {
+    font-size: 1.5rem;
+}
+
+.text-display {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.textos-medios {
+    font-size: 0.5rem;
+}
+
+.texto-footer {
+    font-size: 0.5rem;
+}
+
+.justificado {
+    text-align: center;
+}
+
+/* ===================== */
+/* NAVBAR Y FOOTER */
+/* ===================== */
+nav.navbar,
+footer {
+    background-color: #dbcbea;
+    color: white;
+}
+
+/* ===================== */
+/* EFECTOS DE HOVER */
+/* ===================== */
+.hover-glow {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform, box-shadow;
+    z-index: 1;
+}
+
+.hover-glow:hover {
+    transform: scale(1.08);
+    box-shadow:
+        0 0 10px rgba(255, 255, 255, 0.6),
+        0 0 20px rgba(90, 78, 157, 0.8),
+        0 0 30px rgba(90, 78, 157, 0.6),
+        0 0 40px rgba(90, 78, 157, 0.4);
+    z-index: 10;
+}
+
+/* ===================== */
+/* TARJETAS Y COMPONENTES VISUALES */
+/* ===================== */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-sub {
+    padding: 1.5rem;
+    border: 0.5px solid #5A4E9D;
+    border-radius: 0.5rem;
+    box-shadow:
+        0 4px 10px rgba(90, 78, 157, 0.25),
+        0 1px 3px rgba(90, 78, 157, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.card-sub:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 0 10px rgba(90, 78, 157, 0.4),
+        0 0 20px rgba(90, 78, 157, 0.3),
+        0 0 30px rgba(90, 78, 157, 0.2);
+}
+
+.card-sub h1 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.card-sub small {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    color: #222;
+}
+
+.card-sub p {
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+    text-align: justify;
+}
+
+.card-sub ul {
+    list-style: none;
+    padding-left: 1.25rem;
+}
+
+.card-sub ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+/* ===================== */
+/* LINKS REDES SOCIALES */
+/* ===================== */
+.linkedin-link,
+.github-link,
+.gmail-link {
+    display: inline-block;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.linkedin-link:hover,
+.github-link:hover,
+.gmail-link:hover {
+    transform: scale(1.2);
+}
+
+.linkedin-icon,
+.github-icon,
+.gmail-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    filter: invert(18%) sepia(12%) saturate(2000%) hue-rotate(210deg) brightness(90%) contrast(85%);
+}
+
+/* ===================== */
+/* SECCIÓN CONTACTO RESPONSIVE */
+/* ===================== */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 100%;
+}
+
+.contact-link,
+.contact-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #222;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.contact-link:hover {
+    color: #5A4E9D;
+}
+
+.contact-icon {
+    width: 18px;
+    height: 18px;
+    filter: grayscale(30%);
+}
+
+.contact-location {
+    color: #5A4E9D;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* Responsive: apila en móviles */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-link,
+    .contact-location {
+        width: 100%;
+    }
+}
+
+/* ===================== */
+/* BOTÓN "SCROLL TO TOP" */
+/* ===================== */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 100;
+    background-color: #5A4E9D;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 12px 16px;
+    font-size: 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scrollToTopBtn.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+#scrollToTopBtn:hover {
+    box-shadow:
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(90, 78, 157, 1),
+        0 0 30px rgba(90, 78, 157, 0.8);
+    transform: scale(1.1);
+}
+
+/* ===================== */
+/* BOTONES DE INTERACCIÓN */
+/* ===================== */
+.btn-proyecto {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.625rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-proyecto:hover {
+    background-color: #1e40af;
+    transform: scale(1.03);
+}
+
+#contactMeBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 8px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: transparent !important;
+    color: black;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#contactMeBtn:hover {
+    background-color: #eacbea;
+}
+
+/* ===================== */
+/* MEDIA QUERIES ADICIONALES */
+/* ===================== */
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+    }
+
+    .card-sub {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-display {
+        font-size: 1.1rem;
+    }
+
+    .text-md {
+        font-size: 0.95rem;
+    }
+
+    main section {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .color-box {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .texto-footer {
+        font-size: 0.1rem;
+    }
+}

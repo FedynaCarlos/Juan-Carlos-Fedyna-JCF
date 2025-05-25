@@ -39,9 +39,7 @@
 
 > Puedes visitar el sitio en [https://juan-carlos-fedyna-jcf.netlify.app/]
 
-<p align="center">
-  <img src="https://via.placeholder.com/900x500.png?text=Vista+Previa+de+Pantalla+Principal" alt="Captura del sitio web" width="80%">
-</p>
+![image](https://github.com/user-attachments/assets/2dba25fe-1d6f-4f69-be7f-90996b2a0163)
 
 ---
 
@@ -59,7 +57,7 @@
 Puedes encontrarme y contactarme en:
 
 <p align="left">
-  <a href="https://www.linkedin.com/in/tuusuario" target="_blank">
+  <a href="https://www.linkedin.com/in/juancarlosfedyna/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Perfil-blue?style=for-the-badge&logo=linkedin">
   </a>
   <a href="mailto:juanfedyn@gmail.com" target="_blank">

@@ -383,3 +383,63 @@ footer {
         font-size: 0.1rem;
     }
 }
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+  padding: 20px 0;
+  background-color: var(--color-2, #f8f9fa); /* Color de fondo adaptable */
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Texto © */
+.texto-footer {
+  font-size: 0.95rem;
+  color: #222 !important; /* Contraste asegurado */
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* Ícono de LinkedIn */
+footer a.linkedin-link {
+  display: inline-block;
+  margin-left: 8px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer a.linkedin-link img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  filter: grayscale(0%);
+}
+
+footer a.linkedin-link:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Diseño adaptable */
+@media (max-width: 768px) {
+  footer {
+    padding: 15px 0;
+  }
+
+  .texto-footer {
+    font-size: 0.85rem;
+  }
+
+  footer a.linkedin-link img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Si hay un main con altura fija, aseguremos que el footer quede visible */
+main {
+  min-height: calc(100vh - 80px); /* Ajusta el 80px si el footer es más alto */
+}
